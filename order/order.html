@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Farm to Fresh Grocery</h1>
+            <nav>
+                <ul>
+                    <li><a href="C:\Users\FARHAT\Desktop\WDOS ASS\Homepage\home.html">Home</a></li>
+                    <li><a href="C:\Users\FARHAT\Desktop\WDOS ASS\vegetable\vegetable.html">Vegetables</a></li>
+                    <li><a href="C:\Users\FARHAT\Desktop\WDOS ASS\dairy\dairy.html">Dairy Products</a></li>
+                    <li><a href="C:\Users\FARHAT\Desktop\WDOS ASS\cosmetics\cosmetics.html">Cosmetics</a></li>
+                    <li><a href="C:\Users\FARHAT\Desktop\WDOS ASS\order\order.html">Order Page</a></li>
+                    <li><a href="C:\Users\FARHAT\Desktop\WDOS ASS\loyalty\loyalty.html">Loyalty Registration</a></li>
+                    <li><a href="C:\Users\FARHAT\Desktop\WDOS ASS\about\about.html">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="order-form">
+            <div class="container">
+                <h2>Place Your Order</h2>
+                <form action="#" method="POST">
+                    <div class="input-group">
+                        <label for="product">Product:</label>
+                        <select id="product" name="product" required>
+                            <option value="">Select Product</option>
+                            <option value="vegetables">Vegetables</option>
+                            <option value="dairy">Dairy Products</option>
+                            <option value="cosmetics">Cosmetics</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity" name="quantity" min="1" required>
+                    </div>
+                    <button type="submit">Add to Cart</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Farm to Fresh Grocery</p>
+        </div>
+    </footer>
+</body>
+</html>
