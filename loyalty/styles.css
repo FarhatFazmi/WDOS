@@ -17,34 +17,136 @@ body {
     padding: 20px;
 }
 
+/* Top of the page banner */
+.delivery-banner {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  color: #fff;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+}
+
+.top {
+  margin-right: auto;
+}
+
+.social-icons {
+  display: flex;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+.fab {
+  font-family: "Font Awesome 5 Brands";
+}
+
+@media (max-width: 625px) {
+  .top {
+      display: none;
+  }
+
+  .social-icons a {
+      font-size: 20px; /* Adjust font size for mobile */
+      margin-left: 5px; /* Adjust margin for mobile */
+      align-items: end;
+  }
+}
+/* top of the page banner ends here */
+
+/* header styles start here */
+
 header {
-    background-color: #f0f0f0;
-    padding: 20px 0;
+  background-color: #333;
+  padding: 20px 0;
+}
+
+header img {
+  height: 50px; /* Adjust height as per your logo dimensions */
+  margin-right: 10px; /* Add some spacing between logo and h1 */
 }
 
 header h1 {
-    margin: 0;
+  margin: 0;
 }
 
 nav ul {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 20px;
+  display: inline;
+  margin-right: 20px;
 }
 
 nav ul li:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
+.blur{
+  backdrop-filter: blur(5px);
 }
+
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+nav ul li a:hover{
+  opacity: 1;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+
+
+/* header styles ends here */
 
 main {
     padding: 20px 0;
@@ -92,12 +194,86 @@ loyalty-benefits .loyalty-scheme ul {
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
 }
 
+.social{
+  display: flex;
+  justify-content: center;
+}
+
+.social a{
+  text-decoration: none;
+  padding: 10px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social a i{
+  font-size: 2em;
+  color: black;
+  opacity: 0.9;
+}
+
+.social a:hover{
+  background-color: black;
+  transition: 0.5s;
+}
+
+.social a:hover i{
+  color: white;
+  transition: 0.5s;
+}
+
+.footer-nav{
+  margin: 30px 0;
+}
+
+.footer-nav ul{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.footer-nav ul li a{
+  color: white;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.3em;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+.footer-nav ul li a:hover {
+  opacity: 1;
+}
+
+.footer-bottom{
+  color: white;
+  background-color: black;
+  line-height: 50px;
+}
+
+@media (max-width:700px) {
+  .footer-nav ul{
+      flex-direction: column;
+  }
+
+  .footer-nav ul li{
+      width: 100%;
+      text-align: center;
+      margin: 10px;
+  }
+}
 .register{
     padding: 10px 20px;
     background-color: #007bff;
@@ -147,16 +323,27 @@ footer {
           text-align: center;
           text-transform: uppercase;
           padding: 15px 0;
-          background: #e4e4e4;
           color: #000;
           font-size: 16x;
+        }
+
+        .silver{
+          background : #C0C0C0;
+        }
+
+        .gold{
+          background: #FFD700;
+        }
+
+        .platinum{
+          background: #A0B2C6;
         }
         
         .price {
           text-align: center;
           text-transform: uppercase;
           padding: 15px 0;
-          background: #f6f6f6;
+          background: none;
           color: #000;
           font-size: 28px;
           font-weight: 300;

@@ -5,23 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loyalty Registration</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Farm to Fresh Grocery</h1>
-            <nav>
-                <ul>
-                    <li><a href="C:\Users\FARHAT\Desktop\WDOS ASS\Homepage\home.html">Home</a></li>
-                    <li><a href="C:\Users\FARHAT\Desktop\WDOS ASS\vegetable\vegetable.html">Vegetables</a></li>
-                    <li><a href="C:\Users\FARHAT\Desktop\WDOS ASS\dairy\dairy.html">Dairy Products</a></li>
-                    <li><a href="C:\Users\FARHAT\Desktop\WDOS ASS\cosmetics\cosmetics.html">Cosmetics</a></li>
-                    <li><a href="C:\Users\FARHAT\Desktop\WDOS ASS\order\order.html">Order Page</a></li>
-                    <li><a href="C:\Users\FARHAT\Desktop\WDOS ASS\loyalty\loyalty.html">Loyalty Registration</a></li>
-                    <li><a href="C:\Users\FARHAT\Desktop\WDOS ASS\about\about.html">About Us</a></li>
-                </ul>
-            </nav>
+      <div class="delivery-banner">
+        <p class="top">&#x1F550; We are open 24/7 &#65372; &#9743; Need Help? Call us:<a href="tel:+94714987397">+94 714987397</a></p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
         </div>
+    </div>
+    <div class="container nav">
+        <img src="C:\Users\FARHAT\Desktop\WDOS ASS\Images\logo1.png" alt="Farm to Fresh Grocery Logo">
+        <h1>Farm to Fresh Grocery</h1>
+        <nav>
+            <ul>
+                <li><a href="C:\Users\FARHAT\Desktop\WDOS ASS\Homepage\home.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Products &#9662;</a>
+                    <div class="dropdown-content">
+                        <a href="C:\Users\FARHAT\Desktop\WDOS ASS\vegetable\vegetable.html">Vegetables</a>
+                        <a href="C:\Users\FARHAT\Desktop\WDOS ASS\dairy\dairy.html">Dairy Products</a>
+                        <a href="C:\Users\FARHAT\Desktop\WDOS ASS\cosmetics\cosmetics.html">Cosmetics</a>
+                    </div>
+                </li>
+                <li><a href="C:\Users\FARHAT\Desktop\WDOS ASS\order\order.html">Order Page</a></li>
+                <li><a href="C:\Users\FARHAT\Desktop\WDOS ASS\loyalty\loyalty.html">Loyalty Registration</a></li>
+                <li><a href="C:\Users\FARHAT\Desktop\WDOS ASS\about\about.html">About Us</a></li>
+            </ul>
+        </nav>            
+    </div>
     </header>
     <main>
         <section id="loyalty-form">
@@ -58,8 +72,8 @@
                 <div id="pricing-tables">
                   <div class="pricing-table">
                     <div class="header">
-                      <div class="title">Silver</div>
-                      <div class="price">Rs 1999<span>/mo</span></div>
+                      <div class="title silver">Silver</div>
+                      <div class="price silver">Rs 1999<span>/mo</span></div>
                     </div>
                     <div class="features">
                       <ul>
@@ -76,8 +90,8 @@
                   
                   <div class="pricing-table">
                     <div class="header">
-                      <div class="title">Gold</div>
-                      <div class="price">Rs 4999<span>/mo</span></div>
+                      <div class="title gold">Gold</div>
+                      <div class="price  gold">Rs 4999<span>/mo</span></div>
                     </div>
                     <div class="features">
                       <ul>
@@ -94,8 +108,8 @@
                   
                   <div class="pricing-table">
                     <div class="header">
-                      <div class="title">Platinum</div>
-                      <div class="price">Rs 9999<span>/mo</span></div>
+                      <div class="title platinum">Platinum</div>
+                      <div class="price platinum">Rs 9999<span>/mo</span></div>
                     </div>
                     <div class="features">
                       <ul>
@@ -114,8 +128,22 @@
         </section>
     </main>
     <footer>
-        <div class="container">
-            <p>&copy; 2024 Farm to Fresh Grocery</p>
+      <div class="container">
+        <div class="social">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <div class="footer-nav">
+            <ul>
+                <li><a href="C:\Users\FARHAT\Desktop\WDOS ASS\Homepage\home.html">Home</a></li>
+                <li><a href="C:\Users\FARHAT\Desktop\WDOS ASS\loyalty\loyalty.html">Loyalty</a></li>
+                <li><a href="C:\Users\FARHAT\Desktop\WDOS ASS\order\order.html">Order Page</a></li>
+                <li><a href="C:\Users\FARHAT\Desktop\WDOS ASS\about\about.html">About us</a></li>
+            </ul>
+        </div>  
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Farm to Fresh Grocery</p>
         </div>
     </footer>
 </body>
