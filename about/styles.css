@@ -9,6 +9,7 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    background-image: url(./images/black\ and\ white.jpg);
 }
 
 .container {
@@ -216,10 +217,16 @@ section h2 {
 }
 
 .branch img {
-    max-width: 100%;
-    height: auto;
+    width: 100%; /* Ensures the image fills its container */
+    height: auto; /* Ensures the image retains its aspect ratio */
+    max-height: 300px; /* Adjust the maximum height as per your design */
     margin-bottom: 20px;
 }
+
+.blur {
+    backdrop-filter: blur(5px);
+  }
+  
 
 table {
     width: 100%;
