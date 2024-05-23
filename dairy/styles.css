@@ -63,6 +63,7 @@ body {
 header {
     background-color: #333;
     padding: 20px 0;
+    position: relative;
 }
 
 header img {
@@ -74,24 +75,34 @@ header h1 {
     margin: 0;
 }
 
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav .menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+    margin-left: auto;
+}
+
 nav ul {
     list-style-type: none;
     padding: 0;
+    display: flex;
 }
 
 nav ul li {
-    display: inline;
     margin-right: 20px;
 }
 
 nav ul li:last-child {
     margin-right: 0;
 }
-
-.blur {
-    backdrop-filter: blur(5px);
-}
-
 
 nav ul li a {
     text-decoration: none;
@@ -107,7 +118,6 @@ nav ul li a:hover {
 
 .dropdown {
     position: relative;
-    display: inline-block;
 }
 
 .dropdown-content {
@@ -134,7 +144,6 @@ nav ul li a:hover {
     display: block;
 }
 
-/* Dropdown Button */
 .dropbtn {
     text-decoration: none;
     color: white;
@@ -144,13 +153,63 @@ nav ul li a:hover {
     transition: 0.5s;
 }
 
+@media (max-width: 704px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav .menu-toggle {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: left;
+        margin: 10px 0;
+    }
+
+    .dropdown-content {
+        position: static;
+        box-shadow: none;
+        background-color: #333;
+    }
+
+    .dropdown-content a {
+        color: white;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #444;
+    }
+}
+
 /* Header styles ends here */
+
+.blur {
+    backdrop-filter: blur(5px);
+}
 main {
     padding: 20px 0;
 }
 
 section h2 {
     margin-bottom: 20px;
+    color: white;
+}
+
+section p{
+    color: white;
 }
 
 /* Product cards */
