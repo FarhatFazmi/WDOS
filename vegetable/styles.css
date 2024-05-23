@@ -251,9 +251,10 @@ section h2 {
 }
 
 .vegetable img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     margin-bottom: 10px;
+    max-width: 200px;
 }
 
 .vegetable h3{
@@ -265,6 +266,24 @@ section h2 {
 .vegetable p{
     color: white;
     opacity: 0.7;
+}
+
+.vegetable-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+@media (max-width: 1000px) {
+    .vegetable-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 700px) {
+    .vegetable-container {
+        grid-template-columns: 1fr;
+    }
 }
 
 footer {

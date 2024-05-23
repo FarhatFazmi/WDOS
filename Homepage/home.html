@@ -12,15 +12,18 @@
         <div class="delivery-banner">
             <p class="top">&#x1F550; We are open 24/7 &#65372; &#9743; Need Help? Call us:<a href="tel:+94714987397">+94 714987397</a></p>
             <div class="social-icons">
-              <a href="#"><i class="fab fa-facebook"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
         <div class="container nav">
             <img src="C:\Users\FARHAT\Desktop\WDOS ASS\Images\logo1.png" alt="Farm to Fresh Grocery Logo">
             <h1>Farm to Fresh Grocery</h1>
             <nav>
-                <ul>
+                <button class="menu-toggle" aria-label="Toggle menu">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <ul class="nav-links">
                     <li><a href="C:\Users\FARHAT\Desktop\WDOS ASS\Homepage\home.html">Home</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropbtn">Products &#9662;</a>
@@ -34,7 +37,7 @@
                     <li><a href="C:\Users\FARHAT\Desktop\WDOS ASS\loyalty\loyalty.html">Loyalty Registration</a></li>
                     <li><a href="C:\Users\FARHAT\Desktop\WDOS ASS\about\about.html">About Us</a></li>
                 </ul>
-            </nav>            
+            </nav>
         </div>
     </header>
     <main>
@@ -93,5 +96,13 @@
             <p>&copy; 2024 Farm to Fresh Grocery</p>
             </div>
     </footer>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
