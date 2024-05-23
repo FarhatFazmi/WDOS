@@ -213,6 +213,28 @@ section p{
 }
 
 /* Product cards */
+
+/* Styles for the order button */
+.order-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    font-size: 1em;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.product-card:hover .order-button {
+    background-color: #fff;
+    color: #000;
+}
+
 .product-card-container {
     display: flex;
     flex-wrap: wrap;
@@ -248,25 +270,20 @@ section p{
     align-items: center;
 }
 
-.product-card button {
-    background-color: #000;
-    color: #fff;
-    border: none;
-    border-radius: 50%;
-    width: 25px;
-    height: 25px;
-    font-size: 1em;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
 .product-card:hover {
     transform: scale(1.05);
 }
 
-.product-card:hover button {
-    background-color: #fff;
-    color: #000;
+@media (max-width: 700px) {
+    .product-card {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 500px) {
+    .product-card {
+        flex: 1 1 100%;
+    }
 }
 
 /* Footer styles */
@@ -351,13 +368,4 @@ footer {
         margin: 10px 0;
     }
 
-    .product-card {
-        flex: 1 1 calc(50% - 20px);
-    }
-}
-
-@media (max-width: 500px) {
-    .product-card {
-        flex: 1 1 100%;
-    }
 }

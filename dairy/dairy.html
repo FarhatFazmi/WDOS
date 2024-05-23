@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dairy Product Page</title>
-    <link rel="stylesheet" href="styles.css">   
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -12,15 +12,18 @@
         <div class="delivery-banner">
             <p class="top">&#x1F550; We are open 24/7 &#65372; &#9743; Need Help? Call us:<a href="tel:+94714987397">+94 714987397</a></p>
             <div class="social-icons">
-              <a href="#"><i class="fab fa-facebook"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
         <div class="container nav">
             <img src="C:\Users\FARHAT\Desktop\WDOS ASS\Images\logo1.png" alt="Farm to Fresh Grocery Logo">
             <h1>Farm to Fresh Grocery</h1>
             <nav>
-                <ul>
+                <button class="menu-toggle" aria-label="Toggle menu">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <ul class="nav-links">
                     <li><a href="C:\Users\FARHAT\Desktop\WDOS ASS\Homepage\home.html">Home</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropbtn">Products &#9662;</a>
@@ -34,7 +37,7 @@
                     <li><a href="C:\Users\FARHAT\Desktop\WDOS ASS\loyalty\loyalty.html">Loyalty Registration</a></li>
                     <li><a href="C:\Users\FARHAT\Desktop\WDOS ASS\about\about.html">About Us</a></li>
                 </ul>
-            </nav>            
+            </nav>
         </div>
     </header>
     <main>
@@ -45,7 +48,7 @@
                     <h3>Milk</h3>
                     <div>
                         <span>Rs 500</span>
-                        <button>+</button>
+                        <a href="C:\Users\FARHAT\Desktop\WDOS ASS\order\order.html?product=Milk" class="order-button">+</a>
                     </div>
                 </div>
                 <div class="product-card">
@@ -53,7 +56,7 @@
                     <h3>Cheese</h3>
                     <div>
                         <span>Rs 500</span>
-                        <button>+</button>
+                        <a href="C:\Users\FARHAT\Desktop\WDOS ASS\order\order.html?product=Cheese" class="order-button">+</a>
                     </div>
                 </div>
                 <div class="product-card">
@@ -61,7 +64,7 @@
                     <h3>Yogurt</h3>
                     <div>
                         <span>Rs 500</span>
-                        <button>+</button>
+                        <a href="C:\Users\FARHAT\Desktop\WDOS ASS\order\order.html?product=Yogurt" class="order-button">+</a>
                     </div>
                 </div>
                 <div class="product-card">
@@ -69,7 +72,7 @@
                     <h3>Flavoured Milk</h3>
                     <div>
                         <span>Rs 500</span>
-                        <button>+</button>
+                        <a href="C:\Users\FARHAT\Desktop\WDOS ASS\order\order.html?product=FlavouredMilk" class="order-button">+</a>
                     </div>
                 </div>
                 <div class="product-card">
@@ -77,7 +80,7 @@
                     <h3>Butter</h3>
                     <div>
                         <span>Rs 500</span>
-                        <button>+</button>
+                        <a href="C:\Users\FARHAT\Desktop\WDOS ASS\order\order.html" class="order-button">+</a>
                     </div>
                 </div>
                 <div class="product-card">
@@ -85,7 +88,7 @@
                     <h3>Milk Powder</h3>
                     <div>
                         <span>Rs 500</span>
-                        <button>+</button>
+                        <a href="C:\Users\FARHAT\Desktop\WDOS ASS\order\order.html?product=MilkPowder" class="order-button">+</a>
                     </div>
                 </div>
             </div>
@@ -108,7 +111,15 @@
         </div>
         <div class="footer-bottom">
             <p>&copy; 2024 Farm to Fresh Grocery</p>
-            </div>
+        </div>
     </footer>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
