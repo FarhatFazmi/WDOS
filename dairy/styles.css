@@ -8,7 +8,7 @@
 /* Global Styles */
 body {
     background-image: url(./Images/Dairy.png);
-    font-family: arial, sans-serif;
+    font-family: Arial, sans-serif;
     line-height: 1.6;
 }
 
@@ -27,26 +27,26 @@ body {
     padding: 10px;
     font-family: Arial, sans-serif;
 }
-  
+
 .top {
     margin-right: auto;
 }
 
 .social-icons {
     display: flex;
-  }
-  
-  .social-icons a {
+}
+
+.social-icons a {
     color: #fff;
     font-size: 30px;
     margin-left: 10px;
-  }
-  
-  .fab {
-    font-family: "Font Awesome 5 Brands";
-  }
+}
 
-  @media (max-width: 625px) {
+.fab {
+    font-family: "Font Awesome 5 Brands";
+}
+
+@media (max-width: 625px) {
     .top {
         display: none;
     }
@@ -57,10 +57,9 @@ body {
         align-items: end;
     }
 }
-/* top of the page banner ends here */
+/* Top of the page banner ends here */
 
-/* header styles start here */
-
+/* Header styles start here */
 header {
     background-color: #333;
     padding: 20px 0;
@@ -89,7 +88,7 @@ nav ul li:last-child {
     margin-right: 0;
 }
 
-.blur{
+.blur {
     backdrop-filter: blur(5px);
 }
 
@@ -102,7 +101,7 @@ nav ul li a {
     transition: 0.5s;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
     opacity: 1;
 }
 
@@ -145,9 +144,7 @@ nav ul li a:hover{
     transition: 0.5s;
 }
 
-
-
-/* header styles ends here */
+/* Header styles ends here */
 main {
     padding: 20px 0;
 }
@@ -156,32 +153,43 @@ section h2 {
     margin-bottom: 20px;
 }
 
-.product-card{
-    max-width: 12em;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 1em;
+/* Product cards */
+.product-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.product-card {
+    flex: 1 1 calc(33.333% - 20px);
     box-shadow: 0 5px 5px #e1e1e1;
+    padding: 1em;
+    background-color: #333;
+    color: white;
+    border-radius: 8px;
+    transition: transform 0.2s;
 }
 
-.product-card img{
+.product-card img {
     max-width: 100%;
+    border-radius: 8px;
 }
 
-.product-card h3{
+.product-card h3 {
     font-size: 1.3em;
     margin: 0.5em 0;
-    color: #fff;
-    opacity: 0.7;
+    opacity: 0.9;
 }
 
-.product-card div{
-    font-size:1.2em;
+.product-card div {
+    font-size: 1.2em;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.product-card button{
+.product-card button {
     background-color: #000;
     color: #fff;
     border: none;
@@ -189,19 +197,20 @@ section h2 {
     width: 25px;
     height: 25px;
     font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-.product-card:hover{
-    background-color: #333;
-    color: #fff;
-    opacity: 1;
+.product-card:hover {
+    transform: scale(1.05);
 }
 
-.product-card:hover button{
-    color: black;
+.product-card:hover button {
     background-color: #fff;
+    color: #000;
 }
 
+/* Footer styles */
 footer {
     background-color: #333;
     color: #fff;
@@ -209,12 +218,12 @@ footer {
     padding: 20px 0;
 }
 
-.social{
+.social {
     display: flex;
     justify-content: center;
 }
 
-.social a{
+.social a {
     text-decoration: none;
     padding: 10px;
     background-color: white;
@@ -227,33 +236,33 @@ footer {
     align-items: center;
 }
 
-.social a i{
+.social a i {
     font-size: 2em;
     color: black;
     opacity: 0.9;
 }
 
-.social a:hover{
+.social a:hover {
     background-color: black;
     transition: 0.5s;
 }
 
-.social a:hover i{
+.social a:hover i {
     color: white;
     transition: 0.5s;
 }
 
-.footer-nav{
+.footer-nav {
     margin: 30px 0;
 }
 
-.footer-nav ul{
+.footer-nav ul {
     display: flex;
     justify-content: center;
     list-style: none;
 }
 
-.footer-nav ul li a{
+.footer-nav ul li a {
     color: white;
     margin: 20px;
     text-decoration: none;
@@ -266,20 +275,30 @@ footer {
     opacity: 1;
 }
 
-.footer-bottom{
+.footer-bottom {
     color: white;
     background-color: black;
     line-height: 50px;
 }
 
-@media (max-width:700px) {
-    .footer-nav ul{
+@media (max-width: 700px) {
+    .footer-nav ul {
         flex-direction: column;
     }
 
-    .footer-nav ul li{
+    .footer-nav ul li {
         width: 100%;
         text-align: center;
-        margin: 10px;
+        margin: 10px 0;
+    }
+
+    .product-card {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 500px) {
+    .product-card {
+        flex: 1 1 100%;
     }
 }
