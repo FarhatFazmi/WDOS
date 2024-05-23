@@ -7,7 +7,7 @@
 
 /* Global Styles */
 body {
-    background-color: mintcream;
+    background-image: url(./Images/Dairy.png);
     font-family: arial, sans-serif;
     line-height: 1.6;
 }
@@ -167,9 +167,11 @@ section h2 {
     max-width: 100%;
 }
 
-.product-card h4{
+.product-card h3{
     font-size: 1.3em;
     margin: 0.5em 0;
+    color: #fff;
+    opacity: 0.7;
 }
 
 .product-card div{
@@ -190,12 +192,13 @@ section h2 {
 }
 
 .product-card:hover{
-    background-color: lightslategray;
+    background-color: #333;
     color: #fff;
+    opacity: 1;
 }
 
 .product-card:hover button{
-    color: #000;
+    color: black;
     background-color: #fff;
 }
 
